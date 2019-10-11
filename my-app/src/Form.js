@@ -33,9 +33,9 @@ const Form = (props) => {
    return (
 
       <form onSubmit={event => handleSubmit(event)}>
-
+         <h1>TEAM BUILDER</h1>
          <label>
-            name:
+            <b>Name:</b>
             <input
                type="text"
                name="name"
@@ -43,9 +43,9 @@ const Form = (props) => {
                onChange={ e => handleChange(e)}
             />
          </label>
-
+         <br></br>
          <label>
-            email:
+            <b>Email*:</b>
             <input
                type="text"
                name="email"
@@ -53,9 +53,9 @@ const Form = (props) => {
                onChange={ e => handleChange(e)}
             />
          </label>
-
+         <br></br>
          <label>
-            role:
+            <b>Role**:</b>
             <input
                type="text"
                name="role"
@@ -63,6 +63,7 @@ const Form = (props) => {
                onChange={ e => handleChange(e)}
             />
          </label>
+         <br></br>
          <button>Submit</button>
       </form>
    )
